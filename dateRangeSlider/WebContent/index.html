@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Dashboard</title>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta charset="UTF-8">
+
+
+  <script
+    id='sap-ui-bootstrap'
+    type='text/javascript'
+    src='resources/sap-ui-core.js'
+    data-sap-ui-xx-bindingSyntax="complex"
+    data-sap-ui-theme='sap_bluecrystal'
+    data-sap-ui-libs='sap.m,sap.ui.unified,sap.ui.table'
+    data-sap-ui-resourceroots='{
+      "projectmanagement" : "./",
+      "view" : "./view"
+    }' > 
+  </script>
+<style>
+
+
+</style>
+  <script>
+
+    new sap.m.Shell("Shell", {
+      title : "Customer Info",
+      showLogout : true,
+      appWidthLimited : true, // boolean
+      app : new sap.ui.core.ComponentContainer({
+        name : 'projectmanagement'
+      }),
+
+    }).placeAt('content');
+
+  </script>
+
+</head>
+<body class='sapUiBody' id='content'>
+</body>
+</html>
